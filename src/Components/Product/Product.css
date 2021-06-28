@@ -1,0 +1,31 @@
+.product{
+    display: flex;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+}
+.info{
+    display: flex;
+}
+.name{
+    color: blue;
+}
+.image-container{
+    margin:5px;
+    padding: 10px;
+}
+.info-container{
+    margin: 5px;
+    padding: 10px;
+}
+.info>*{
+    margin-right: 15px;
+}
+.stars{
+    color: goldenrod;
+}
+.button{
+    border: .5px solid gray;
+    padding: 5px 40px;
+    border-radius: 5px;
+    background-color: goldenrod;
+}
