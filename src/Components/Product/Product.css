@@ -25,7 +25,8 @@
 }
 .button{
     border: .5px solid gray;
-    padding: 5px 40px;
+    padding: 5px 75px;
     border-radius: 5px;
     background-color: goldenrod;
+    cursor: pointer;
 }
