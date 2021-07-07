@@ -1,19 +1,20 @@
-import { faShoppingBasket } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import { Link } from 'react-router-dom';
+
 
 const Cart = (props) => {
     const cart = props.cart;
-    const total = cart.reduce((total, prd) => total + prd.price, 0);
+    // const total = cart.reduce((total, prd) => total + prd.quant, 0);
+    let total=0;
+    for(let i=0;i<cart.length;i++){
+        const product=cart[i];
+        total=total+product.price*product.quant;
+    }
     return (
         <div>
-            <h4>This is a cart</h4>
+            <h2>Order Summary: </h2>
             <p>Items ordered: {cart.length}</p>
             <p>Total price: {total}</p>
-            <button className='button' > <Link to={'/review'}>
-                <FontAwesomeIcon icon={faShoppingBasket} /> Review Your Order
-            </Link></button>
+            {props.children}
         </div>
     );
 };
