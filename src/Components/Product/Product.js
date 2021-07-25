@@ -10,7 +10,7 @@ const Product = (props) => {
     return (
         <div className="product">
             <div className='image-container'>
-                <img src={img}></img>
+                <img src={img} alt=''/>
             </div>
             <div className='information-container'>
                 <h3 className='name'><Link to={'/product/'+key}>{name}</Link></h3>

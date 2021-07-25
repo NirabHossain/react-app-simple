@@ -11,7 +11,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Shop = () => {
     const first10 = fakeData.slice(0, 10);
-    const [products, setProduct] = useState(first10);
+    // const [products, setProduct] = useState(first10);
+    const products= first10;
     const [cart, setCart] = useState([]);
 
     useEffect(() => {
